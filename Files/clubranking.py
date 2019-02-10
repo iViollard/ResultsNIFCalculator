@@ -9,8 +9,8 @@ cellBGReset = PatternFill(start_color='FFFFFF',
                           fill_type='solid')
 cellClrReset = Font(color='000000')
 
-# loads the workbook - assumes the sussex.xlsx file is in the same directory as the script
-wb = openpyxl.load_workbook("sussex.xlsx")
+# loads the workbook - assumes the Results.xlsx file is in the same directory as the script
+wb = openpyxl.load_workbook("Results.xlsx")
 
 # load first worksheet
 ws = wb.worksheets[0]
@@ -121,4 +121,4 @@ ws['A1'].fill = cellBGReset
 ws['A1'].font = cellClrReset
 
 # While testing I always save to a different workbook so I don't overwrite my test spreadsheet
-wb.save('sussex2.xlsx')
+wb.save('ResultsNif.xlsx')
